@@ -1,7 +1,7 @@
 // expose.js
 
 window.addEventListener('DOMContentLoaded', init);
-let sound = "";
+let sound = '';
 let vol = 50;
 const jsConfetti = new JSConfetti();
 
@@ -30,29 +30,29 @@ function changeHorn(img, horn) {
 function changeVolume(speaker, volume){
   vol = volume;
   if(vol == 0){
-    speaker.src = "../assets/icons/volume-level-0.svg";
-    speaker.alt = "volume level 0";
+    speaker.src = '../assets/icons/volume-level-0.svg';
+    speaker.alt = 'volume level 0';
   }
   else if(vol < 33){
-    speaker.src = "../assets/icons/volume-level-1.svg";
-    speaker.alt = "volume level 1";
+    speaker.src = '../assets/icons/volume-level-1.svg';
+    speaker.alt = 'volume level 1';
   }
   else if(vol < 67){
-    speaker.src = "../assets/icons/volume-level-2.svg";
-    speaker.alt = "volume level 2";
+    speaker.src = '../assets/icons/volume-level-2.svg';
+    speaker.alt = 'volume level 2';
   }
   else {
-    speaker.src = "../assets/icons/volume-level-3.svg";
-    speaker.alt = "volume level 3";
+    speaker.src = '../assets/icons/volume-level-3.svg';
+    speaker.alt = 'volume level 3';
   }
 }
 
 async function playHorn(){
-  if(sound == "") return;
+  if(sound == '') return;
   let audio = new Audio(sound);
   audio.volume = vol/100;
 
-  if(sound.includes("party")){
+  if(sound.includes('party')){
     jsConfetti.addConfetti({
       emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
       confettiRadius: 12, 
