@@ -37,12 +37,12 @@ function speak(){
   }
 
   utterThis.addEventListener('start', () => {
-    img.src = '../assets/images/smiling-open.png';
+    img.src = 'assets/images/smiling-open.png';
     img.alt = 'Smiling face with open mouth'; 
   });
 
   utterThis.addEventListener('end', () => { 
-    img.src = '../assets/images/smiling.png';
+    img.src = 'assets/images/smiling.png';
     img.alt = 'Smiling face';
   });
 

@@ -22,27 +22,27 @@ function init() {
 }
 
 function changeHorn(img, horn) {
-  img.src = `../assets/images/${horn}.svg`;
+  img.src = `assets/images/${horn}.svg`;
   img.alt = `${horn}`;
-  sound = `../assets/audio/${horn}.mp3`;
+  sound = `assets/audio/${horn}.mp3`;
 }
 
 function changeVolume(speaker, volume){
   vol = volume;
   if(vol == 0){
-    speaker.src = '../assets/icons/volume-level-0.svg';
+    speaker.src = 'assets/icons/volume-level-0.svg';
     speaker.alt = 'volume level 0';
   }
   else if(vol < 33){
-    speaker.src = '../assets/icons/volume-level-1.svg';
+    speaker.src = 'assets/icons/volume-level-1.svg';
     speaker.alt = 'volume level 1';
   }
   else if(vol < 67){
-    speaker.src = '../assets/icons/volume-level-2.svg';
+    speaker.src = 'assets/icons/volume-level-2.svg';
     speaker.alt = 'volume level 2';
   }
   else {
-    speaker.src = '../assets/icons/volume-level-3.svg';
+    speaker.src = 'assets/icons/volume-level-3.svg';
     speaker.alt = 'volume level 3';
   }
 }
